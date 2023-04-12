@@ -325,6 +325,7 @@ span {
     padding-left: 42px;
     border-radius: 4px;
     outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field svg {
@@ -334,6 +335,7 @@ span {
     transform: translateY(-50%);
     cursor: pointer;
     fill: var(--color-background-main);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input:focus {
@@ -351,6 +353,7 @@ span {
     outline: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field textarea::placeholder {
@@ -398,6 +401,7 @@ span {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -423,7 +427,7 @@ span {
 
 .form-btn {
     padding: 16px 32px;
-    background-color: var(--color-background-btn);
+    background-color: var(--color-iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF;
@@ -440,6 +444,11 @@ span {
     letter-spacing: 0.04em;
     color: var(--color-background);
     margin-bottom: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:is(:hover, :focus) {
+    background-color: var(--color-background-btn);
 }
 
 /* Form */
@@ -792,6 +801,7 @@ border-radius: 0px 0px 4px 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--color-background);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe input:focus {
