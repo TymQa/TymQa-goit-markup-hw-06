@@ -232,13 +232,12 @@ span {
 }
 
 .modal {
-    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    padding: 72px 24px 24px;
 
-    min-height: 576px;
     min-width: 408px;
 
     background-color: #ffffff;
@@ -272,12 +271,12 @@ span {
 
 /* Form */
 
-.form-wrapper {
+/* .form-wrapper {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 72px;
     margin: 0 auto;
-}
+} */
 
 .form-title {
     font-weight: 500;
@@ -325,7 +324,10 @@ span {
     padding-left: 42px;
     border-radius: 4px;
     outline: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-field svg {
@@ -335,7 +337,10 @@ span {
     transform: translateY(-50%);
     cursor: pointer;
     fill: var(--color-background-main);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-field input:focus {
@@ -354,6 +359,9 @@ span {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding-top: 8px;
+    padding-left: 16px;
 }
 
 .form-field textarea::placeholder {
@@ -362,9 +370,6 @@ span {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-
-    padding-top: 8px;
-    padding-left: 16px;
 }
 
 .form-field textarea:focus {
@@ -372,9 +377,6 @@ span {
 }
 
 .checkbox-field {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
     margin-bottom: 24px;
 }
 
@@ -391,7 +393,7 @@ span {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: absolute
+    position: absolute;
 }
 
 .checkbox-icon {
@@ -443,7 +445,6 @@ span {
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-background);
-    margin-bottom: 24px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -774,10 +775,10 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-subscribe {
-    margin-left: 80px;
+    margin-left: auto;
 }
 
-.footer-subscribe label {
+.footer-subscribe p {
     display: block;
     text-align: left;
     margin-bottom: 16px;
