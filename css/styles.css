@@ -297,6 +297,10 @@ span {
     margin-bottom: 8px;
 }
 
+.comment-field {
+    margin-bottom: 8px;
+}
+
 .form-field label {
     margin-bottom: 4px;
 }
@@ -848,6 +852,9 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--color-background-btn);
 }
 
+.footer-form {
+    display: flex;
+}
 
 /* footer */
 
